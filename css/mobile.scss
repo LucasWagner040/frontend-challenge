@@ -1,0 +1,267 @@
+$backgrond-botao-025: linear-gradient(0.25turn, #00ffb1, #0062ff);
+$backgrond-botao-1: linear-gradient(1turn, #00ffb1, #0062ff);
+@media (min-width: 1051px) {
+    .nav-list {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1060px) {
+    .logo {
+        margin-left: 35px;
+        margin-right: 60%;
+    }
+
+    .nav-list {
+        position: absolute;
+        right: 0;
+        width: 65vw;
+        height: 100vh;
+        background: $backgrond-botao-1;
+        flex-direction: column;
+        align-items: initial;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li {
+        background: rgba(255, 255, 255, 0);
+        padding: 0px;
+
+        a {
+            font-size: 15px;
+        }
+    }
+
+    .nav-list li {
+        margin-top: 60px;
+        margin-left: 0;
+        opacity: 0;
+        padding: 0px;
+        text-align: center;
+        color: white;
+    }
+
+    .nav-list li:hover {
+        transition: 0.2s ease;
+        border-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .mobile-menu {
+        display: block;
+        z-index: 400;
+        width: 45px;
+        height: 45px;
+
+        div {
+            border-radius: 15px;
+            width: 40px;
+            height: 5px;
+            background: $backgrond-botao-025;
+            margin: 5px 8px;
+            transition: 0.3s;
+            margin-right: 60px;
+            float: right;
+        }
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-14px, 14px);
+    background: white;
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-8px, -7px);
+    background: white;
+}
+
+@media (max-width: 1060px) {
+    nav {
+        height: 96px;
+
+        img {
+            transform: scale(1.4);
+        }
+    }
+
+    main {
+        top: 0px;
+        margin-top: 70px;
+        height: 70vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagens/Img-header-mobile.png");
+        background-repeat:repeat;
+        background-position:center;
+        .informação-header {
+            width: 100%;
+            height: 250px;
+            padding: 15px;
+            margin: auto;
+
+            .inf-header {
+                height: 100%;
+                display: flex;
+
+                img {
+                    width: 30px;
+                }
+
+                .botão-left {
+                    width: 5%;
+                    float: left;
+                    transform: rotate(180deg);
+                    border: 0px;
+                    background: transparent;
+                }
+
+                .botão-rigth {
+                    width: 5%;
+                    float: right;
+                    border: 0px;
+                    padding-left: 0px;
+                    background: transparent;
+                }
+
+                .inf-center {
+                    width: 90%;
+                    text-align: center;
+                    padding-left: 0px;
+                    margin-top: 5%;
+
+                    h1 {
+                        color: white;
+                        padding-top: 11px;
+                        font-size: 1.8rem;
+                        letter-spacing: 1.5px;
+                        font-weight: bold;
+                    }
+
+                    h5 {
+                        font-weight: normal;
+                        color: white;
+                        font-size: 15px;
+                        padding: 7px 6px 0 7px;
+                        line-height: 20px;
+                    }
+
+                    .botão-principal {
+                        margin-top: 3%;
+                        margin-right: 5px;
+                        letter-spacing: 1px;
+                        border: 0px;
+                        border-radius: 30px;
+                        width: 125px;
+                        padding: 9px;
+                        background: $backgrond-botao-025;
+                        color: white;
+
+                        img {
+                            width: 20px;
+                            padding-bottom: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .com-inf-card {
+        display: block;
+        width: 100%;
+
+        div{
+            h6{
+                text-align: center;
+                width: 210px;
+            }
+        }
+    }
+
+    section {
+        margin-top: 40px;
+        padding-top: 10px;
+        height: 1150px;
+
+        div {
+            display: block;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+
+            div {
+                margin-bottom: 40px;
+
+                p:nth-child(3) {
+                    padding-left: 30%;
+                }
+            }
+        }
+    }
+    footer {
+        height: 340px;
+
+        .footer-container {
+            width: 100%;
+            height: 310px;
+            color: white;
+            padding: 40px 0;
+            display: block;
+            
+            div {
+                float: none;
+                height: 80%;
+                margin: auto;
+                text-align: center;
+                
+                h4 {
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+
+                p {
+                    width: 100%;
+                    display: block;
+                }
+            }
+            
+            button {
+                width: 125px;
+                padding: 5px 15px;
+                margin-left: calc(60% - 125px);
+                float: none;
+                margin-top: 0;
+            }
+        }
+        
+        div:nth-child(2) {
+            div {
+                width: 85%;
+            }
+        }
+    }
+
+    .botao-flutuante {
+        display: block;
+    }
+}
