@@ -17,4 +17,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Bootstrap 4](https://getbootstrap.com/)
 
 
- ##A visualização do desafio na netlify estará [AQUI](https://front-end-challenge-lucas.netlify.app/).
+ ## A visualização do desafio na netlify estará [AQUI](https://front-end-challenge-lucas.netlify.app/).
