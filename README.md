@@ -1,4 +1,4 @@
-# Desafio-Furza-Studio
+# Frontend-Challenge
 
 ## Repositório criado para a visualização do desafio Frontend-Challenge
 
