@@ -3,7 +3,7 @@
 ## Repositório criado para a visualização do desafio Frontend-Challenge
 
 <h4 align="center"> 
-	🚧  Fontend-Challenge 🚀 Finalizado  🚧
+	🚧  Frontend-Challenge 🚀 Finalizado  🚧
 </h4>
 
 ### 🛠 Tecnologias
